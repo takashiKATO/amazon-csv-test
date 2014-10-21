@@ -83,6 +83,7 @@
   });
  }
  function load(num) {
+  console.log(num);
   var df = $.Deferred();
   var page = get(num);
   page.done(function(data){
