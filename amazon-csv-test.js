@@ -24,6 +24,7 @@
  var year = '2014';
  var all = false;
  function init(num) {
+  console.log(num)
   if(typeof num !== 'number') {
    num = 0;
    $('<div/>').css({
