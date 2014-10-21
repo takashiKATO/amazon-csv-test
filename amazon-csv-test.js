@@ -24,7 +24,7 @@
  var year = '2014';
  var all = false;
  function init(num) {
-  console.log(num)
+  console.log("init="+num)
   if(typeof num !== 'number') {
    num = 0;
    $('<div/>').css({
@@ -84,7 +84,7 @@
   });
  }
  function load(num) {
-  console.log(num);
+  console.log("load="+num);
   var df = $.Deferred();
   var page = get(num);
   page.done(function(data){
