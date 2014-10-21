@@ -95,12 +95,10 @@
     var items = [];
     box.find('.item-title').each(function(){
      items.push($(this).text().trim());
-     console.log($(this).text()); //added by ORE
     });
     var item = items.join(itemDelimiter);
   
     var priceText = $(box.find('.price')[0]).text();
-    console.log(priceText); //added by ORE
     var price = Number(priceText.match(/[0-9]/g).join(''));
   
     console.log(item, price);
