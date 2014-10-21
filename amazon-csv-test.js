@@ -87,6 +87,7 @@
   console.log("load="+num);
   var df = $.Deferred();
   var page = get(num);
+  console.log("could get");
   page.done(function(data){
    var dom = $.parseHTML(data);
    var results = [];
