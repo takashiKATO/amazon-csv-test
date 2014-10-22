@@ -115,11 +115,14 @@
  }
  function get(num) {
   var df = $.Deferred();
+  console.log("starting ajax")
   $.ajax({
    url: 'https://www.amazon.co.jp/gp/css/order-history/?orderFilter=year-'+year+'&startIndex='+num*10,
    success: function(data){
+    console.log("ajax success");
     df.resolve(data);
    }
+   
   });
   return df.promise();
  }
